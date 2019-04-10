@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- Creating bean with default zero-arg constructor -->
+    <bean id="s1" class="beans.Student">
+        <property name="id" value="101"/>
+        <property name="name" value="Abdul Katheer"/>
+        <property name="mark" value="460"/>
+    </bean>
+
+    <!-- Creating bean with parameterized constructor -->
+    <bean id="s2" class="beans.Student">
+        <constructor-arg index="0" value="102"/>
+        <constructor-arg index="1" value="Dhanalakshmi"/>
+        <constructor-arg index="2" value="462"/>
+    </bean>
+
+</beans>
